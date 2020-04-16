@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/home.css') }}">
+    <title> {%block title%} {%endblock%}</title>
+  </head>
+  <body>
+        <nav class="navbar navbar-dark bg-dark">
+          <div>
+          <img style="padding-right: 20px;" src="../static/image/unnamed.png">
+          <a class="navbar-brand" style="font-size: 25px;">EPYTODO</a>
+        </div>
+        <div class="navbar-nav" id="navbarMenu">
+              <ul class="nav justify-content-end" style="font-size: 20px;">
+                  <li class="nav-item" style="padding-right: 30px;">
+                      <a href="/signout" class="nav-link">Logout</a>
+                  </li>
+                  <li class="nav-item" style="padding-right: 30px;">
+                    <a href="/user/task" class="nav-link">My tasks</a>
+                </li>
+              </ul>
+        </div>
+      </nav>
+      <div style="position: absolute;">
+        {%with messages = get_flashed_messages()%}
+        {%if messages%}
+        {% for message in messages %}
+        <div class="alert alert-success alert-dismissable" role="alert">
+         <button type="button" class="close" data-dismiss="alert" aria-label ="close">
+             <span aria-hidden="true">&times;</span>
+         </button>
+            {{message}}
+        {%endfor%}
+        {%endif%}
+        {%endwith%}
+      </div>
+        <img src="../static/image/home.jpg" style="width: 1825px;">
+        <p style="top: 30%; left: 30%; position: absolute; font-size: 50px; color: rgb(255, 0, 0);">THIS IS YOUR HOME PAGE</p>
+        <p style="top: 30%; left: 71%; position: absolute; font-size: 50px; color: rgb(255, 0, 0);"> {{ session.username }} </p>
+        <footer class="py-5 bg-dark">
+          <p class="m-0 text-center text-white">Project : EpyTodo 2020</p>
+          <p class="m-0 text-center text-white"><medium>Epitech promotion 2024<br/>Made by Flavien Roche, Alexis Martin, Léo Soule </medium></p>
+  </footer>
+        <main> {%block main_user%} {%endblock%} </main>
+    <main> {%block main%} {%endblock%} </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>

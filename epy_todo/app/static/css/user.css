@@ -1,0 +1,69 @@
+body {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.font {
+    color: black;
+    font-weight: bold;
+    font-size: 27px;
+}
+
+.insert_task {
+    font-size: 20px;
+}
+
+.agrandir {
+    font-size: 15px;
+    font-size: large;    
+}
+
+a.button1{
+    top: 2%;
+    right: 10%;
+    position: absolute;
+    display:inline-block;
+    padding:0.3em 1.2em;
+    margin:0 0.3em 0.3em 0;
+    border-radius:2em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:#FFFFFF;
+    background-color:#4eb5f1;
+    text-align:center;
+    transition: all 0.2s;
+}
+
+a.button2{
+    top: 2%;
+    right: 2%;
+    position: absolute;
+    display:inline-block;
+    padding:0.3em 1.2em;
+    margin:0 0.3em 0.3em 0;
+    border-radius:2em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:#FFFFFF;
+    background-color:#4eb5f1;
+    text-align:center;
+    transition: all 0.2s;
+}
+a.button3:hover{
+    background-color:#4095c6;
+}
+@media all and (max-width:30em){
+    a.button1{
+        display:block;
+        margin:0.2em auto;
+    }
+    a.button2{
+        display:block;
+        margin:0.2em auto;
+    }
+}

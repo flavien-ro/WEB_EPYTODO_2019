@@ -6,6 +6,7 @@ There is a Database sheme made with MySQL, a usable web server and some HTML, CS
 to make it visually friendly.
 
 To run It:
+
   On Linux: type "sudo python run.py" in your command line
 
   Then, In you web browser type "http://127.0.0.1:5000"

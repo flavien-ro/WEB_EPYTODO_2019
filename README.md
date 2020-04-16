@@ -7,8 +7,8 @@ to make it visually friendly.
 
 To run It:
 
-  On Linux: type "sudo python run.py" in your command line
+    On Linux: type "sudo python run.py" in your command line
 
-  Then, In you web browser type "http://127.0.0.1:5000"
+    Then, In you web browser type "http://127.0.0.1:5000"
   
 For more information refer to the subject named "B-WEB-200_EPyTodo.pdf"

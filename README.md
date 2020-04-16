@@ -9,6 +9,6 @@ To run It:
 
     On Linux: type "sudo python run.py" in your command line
 
-    Then, In your web browser type "http://127.0.0.1:5000"
+    Then, In your web browser type: "http://127.0.0.1:5000"
   
 For more information refer to the subject named "B-WEB-200_EPyTodo.pdf"

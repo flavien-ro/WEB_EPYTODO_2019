@@ -6,9 +6,8 @@ There is a Database sheme made with MySQL, a usable web server and some HTML, CS
 to make it visually friendly.
 
 To run It:
-
-  Linux: sudo python run.py
+  On Linux: type "sudo python run.py" in your command line
 
   Then, In you web browser type "http://127.0.0.1:5000"
   
-For more information go on the subject named "B-WEB-200_EPyTodo.pdf"
+For more information refer to the subject named "B-WEB-200_EPyTodo.pdf"

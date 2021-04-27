@@ -12,3 +12,5 @@ To run It:
     Then, In your web browser type: "http://127.0.0.1:5000"
   
 For more information refer to the subject named "B-WEB-200_EPyTodo.pdf"
+Epitech project tek1
+If you are a student at Epitech, use the concepts used, not the code, or Marvin will find you and give you a -42.
